@@ -158,10 +158,7 @@ void CControlComp::regler()
 
 
 	mMotormoment = (-K[0])*mReglerArray[0] + (-K[1])*mReglerArray[1] + (-K[2])*mReglerArray[2];
-
-	//mMotormoment=mReglerArray*K;
-
-
+	
 };
 
 void CControlComp::motor()

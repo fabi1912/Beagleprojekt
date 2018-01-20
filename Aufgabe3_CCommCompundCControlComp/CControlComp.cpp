@@ -47,8 +47,7 @@ void CControlComp::run()
 		calibrate();
 		filter();
 		regler();
-
-	    //jump();
+	    	//jump();
 		motor();
 
 		cout<<"Motormoment: "<<mMotormoment<<endl;
@@ -79,7 +78,7 @@ void CControlComp::calibrate()
 
 		const float b_X1_dd=-0.1142;
 		const float b_Y1_dd=-0.1322;
-	    const float b_X2_dd=0.08675;
+	   	const float b_X2_dd=0.08675;
 		const float b_Y2_dd=0.04191;
 
 		//Kalibrierung:
@@ -177,6 +176,7 @@ void CControlComp::motor()
 	}
 };
 
+/*
 void CControlComp::jump()
 {
 
@@ -199,4 +199,6 @@ void CControlComp::jump()
 
 
 };
+*/
+
 
